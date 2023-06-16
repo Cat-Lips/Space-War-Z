@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfiebqv2p3cps"]
+
+[ext_resource type="Script" path="res://Game/2D/Ship.cs" id="1_f6e1o"]
+
+[node name="Ship" type="RigidBody2D"]
+script = ExtResource("1_f6e1o")

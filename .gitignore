@@ -1,0 +1,9 @@
+.vs/
+.godot/
+.nuget/
+
+*.log
+*.csproj.*
+
+.export/**/*
+!.export/**/.gitkeep

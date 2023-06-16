@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://cdvni0srbnt8i"]
+
+[ext_resource type="Script" path="res://Game/2D/GravBod.cs" id="1_f1c1m"]
+[ext_resource type="Texture2D" uid="uid://csh5sl7fl0yhv" path="res://Assets/Art/GravBods/GravBods/Asteroid1.png" id="1_vs3mo"]
+[ext_resource type="Script" path="res://addons/GodotSharp.BuildingBlocks.Paint.Net/Components/SpriteScene.cs" id="2_pn6xu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qh0d4"]
+size = Vector2(56, 58)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gyuvs"]
+radius = 30.3488
+
+[node name="GravBod" type="AnimatableBody2D"]
+constant_angular_velocity = 1.74533
+script = ExtResource("1_f1c1m")
+
+[node name="Asteroid1" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-18.5, 15)
+texture = ExtResource("1_vs3mo")
+script = ExtResource("2_pn6xu")
+metadata/Mass = 0.0
+
+[node name="Asteroid1_Rect" type="CollisionShape2D" parent="."]
+position = Vector2(-18, 15)
+shape = SubResource("RectangleShape2D_qh0d4")
+metadata/ShapeKey = "Asteroid1_Shape"
+
+[node name="Asteroid1_Circle" type="CollisionShape2D" parent="."]
+position = Vector2(-17.7, 14.4)
+shape = SubResource("CircleShape2D_gyuvs")
+metadata/ShapeKey = "Asteroid1_Shape"
+
+[node name="Asteroid1_Polygon" type="CollisionPolygon2D" parent="."]
+position = Vector2(-48, -15)
+polygon = PackedVector2Array(36, 2, 34, 2, 34, 3, 30, 3, 30, 2, 24, 2, 24, 3, 23, 3, 23, 4, 22, 4, 22, 5, 20, 5, 20, 4, 17, 4, 17, 5, 15, 5, 15, 6, 14, 6, 14, 7, 13, 7, 13, 8, 12, 8, 12, 12, 11, 12, 11, 13, 10, 13, 10, 15, 9, 15, 9, 16, 8, 16, 8, 17, 7, 17, 7, 19, 6, 19, 6, 22, 5, 22, 5, 24, 4, 24, 4, 26, 3, 26, 3, 28, 2, 28, 2, 33, 3, 33, 3, 35, 4, 35, 4, 41, 5, 41, 5, 44, 6, 44, 6, 46, 7, 46, 7, 47, 9, 47, 9, 48, 10, 48, 10, 49, 11, 49, 11, 52, 12, 52, 12, 53, 13, 53, 13, 54, 14, 54, 14, 55, 16, 55, 16, 56, 20, 56, 20, 55, 22, 55, 22, 56, 24, 56, 24, 57, 31, 57, 31, 58, 33, 58, 33, 59, 37, 59, 37, 58, 38, 58, 38, 57, 39, 57, 39, 56, 40, 56, 40, 55, 41, 55, 41, 54, 42, 54, 42, 52, 45, 52, 45, 51, 46, 51, 46, 50, 47, 50, 47, 49, 49, 49, 49, 48, 50, 48, 50, 47, 51, 47, 51, 46, 52, 46, 52, 44, 53, 44, 53, 41, 54, 41, 54, 36, 55, 36, 55, 35, 56, 35, 56, 34, 57, 34, 57, 32, 58, 32, 58, 27, 57, 27, 57, 26, 56, 26, 56, 25, 55, 25, 55, 23, 54, 23, 54, 22, 53, 22, 53, 19, 52, 19, 52, 17, 51, 17, 51, 15, 50, 15, 50, 14, 49, 14, 49, 13, 48, 13, 48, 12, 47, 12, 47, 11, 46, 11, 46, 6, 45, 6, 45, 5, 44, 5, 44, 4, 43, 4, 43, 3, 42, 3, 42, 2, 41, 2, 41, 1, 36, 1)
+metadata/ShapeKey = "Asteroid1_Shape"

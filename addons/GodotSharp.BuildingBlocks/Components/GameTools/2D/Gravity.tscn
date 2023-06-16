@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://ba5fgbcemadcg"]
+
+[ext_resource type="Script" path="res://addons/GodotSharp.BuildingBlocks/Components/GameTools/2D/Gravity.cs" id="1_u5taw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gc64p"]
+
+[node name="Gravity" type="Area2D"]
+gravity_space_override = 3
+gravity_point = true
+gravity_point_center = Vector2(0, 0)
+gravity_direction = Vector2(0, 0)
+linear_damp_space_override = 3
+linear_damp = 0.0
+angular_damp_space_override = 3
+angular_damp = 0.0
+script = ExtResource("1_u5taw")
+
+[node name="Shape" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_gc64p")

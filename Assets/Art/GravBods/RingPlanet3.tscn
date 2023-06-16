@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://tsa1tid57tuc"]
+
+[ext_resource type="Script" path="res://Game/2D/GravBod.cs" id="1_crvov"]
+[ext_resource type="Texture2D" uid="uid://c3yasgk4dgk5h" path="res://Assets/Art/GravBods/GravBods/RingPlanet3.png" id="1_y0vmj"]
+[ext_resource type="Script" path="res://addons/GodotSharp.BuildingBlocks.Paint.Net/Components/SpriteScene.cs" id="2_xyllp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4aybr"]
+size = Vector2(126, 126)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l255r"]
+radius = 86.2931
+
+[node name="GravBod" type="AnimatableBody2D"]
+constant_angular_velocity = 1.74533
+script = ExtResource("1_crvov")
+
+[node name="RingPlanet3" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -1)
+texture = ExtResource("1_y0vmj")
+script = ExtResource("2_xyllp")
+metadata/Mass = 0.0
+
+[node name="RingPlanet3_Rect" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_4aybr")
+metadata/ShapeKey = "RingPlanet3_Shape"
+
+[node name="RingPlanet3_Circle" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("CircleShape2D_l255r")
+metadata/ShapeKey = "RingPlanet3_Shape"
+
+[node name="RingPlanet3_Polygon" type="CollisionPolygon2D" parent="."]
+position = Vector2(-63, -64)
+polygon = PackedVector2Array(6, 1, 3, 1, 3, 2, 2, 2, 2, 3, 1, 3, 1, 4, 0, 4, 0, 17, 1, 17, 1, 20, 2, 20, 2, 23, 3, 23, 3, 26, 4, 26, 4, 29, 5, 29, 5, 31, 6, 31, 6, 33, 7, 33, 7, 35, 8, 35, 8, 36, 9, 36, 9, 38, 10, 38, 10, 39, 11, 39, 11, 41, 12, 41, 12, 42, 13, 42, 13, 44, 14, 44, 14, 45, 15, 45, 15, 47, 16, 47, 16, 48, 17, 48, 17, 50, 18, 50, 18, 54, 17, 54, 17, 75, 18, 75, 18, 79, 19, 79, 19, 83, 20, 83, 20, 85, 21, 85, 21, 87, 22, 87, 22, 89, 23, 89, 23, 91, 24, 91, 24, 92, 25, 92, 25, 93, 26, 93, 26, 95, 27, 95, 27, 96, 28, 96, 28, 97, 29, 97, 29, 98, 30, 98, 30, 99, 31, 99, 31, 100, 32, 100, 32, 101, 34, 101, 34, 102, 35, 102, 35, 103, 36, 103, 36, 104, 38, 104, 38, 105, 40, 105, 40, 106, 42, 106, 42, 107, 44, 107, 44, 108, 48, 108, 48, 109, 52, 109, 52, 110, 73, 110, 73, 109, 78, 109, 78, 110, 79, 110, 79, 111, 81, 111, 81, 112, 82, 112, 82, 113, 84, 113, 84, 114, 85, 114, 85, 115, 87, 115, 87, 116, 88, 116, 88, 117, 90, 117, 90, 118, 91, 118, 91, 119, 93, 119, 93, 120, 95, 120, 95, 121, 97, 121, 97, 122, 100, 122, 100, 123, 103, 123, 103, 124, 106, 124, 106, 125, 109, 125, 109, 126, 122, 126, 122, 125, 123, 125, 123, 124, 124, 124, 124, 123, 125, 123, 125, 120, 126, 120, 126, 108, 125, 108, 125, 104, 124, 104, 124, 101, 123, 101, 123, 98, 122, 98, 122, 96, 121, 96, 121, 94, 120, 94, 120, 92, 119, 92, 119, 91, 118, 91, 118, 89, 117, 89, 117, 88, 116, 88, 116, 86, 115, 86, 115, 85, 114, 85, 114, 83, 113, 83, 113, 82, 112, 82, 112, 80, 111, 80, 111, 79, 110, 79, 110, 78, 109, 78, 109, 77, 108, 77, 108, 54, 107, 54, 107, 50, 106, 50, 106, 46, 105, 46, 105, 44, 104, 44, 104, 42, 103, 42, 103, 40, 102, 40, 102, 38, 101, 38, 101, 37, 100, 37, 100, 36, 99, 36, 99, 34, 98, 34, 98, 33, 97, 33, 97, 32, 96, 32, 96, 31, 95, 31, 95, 30, 94, 30, 94, 29, 93, 29, 93, 28, 91, 28, 91, 27, 90, 27, 90, 26, 89, 26, 89, 25, 87, 25, 87, 24, 85, 24, 85, 23, 83, 23, 83, 22, 81, 22, 81, 21, 77, 21, 77, 20, 75, 20, 75, 17, 74, 17, 74, 20, 73, 20, 73, 19, 70, 19, 70, 15, 67, 15, 67, 19, 52, 19, 52, 17, 48, 17, 48, 16, 47, 16, 47, 15, 46, 15, 46, 14, 44, 14, 44, 13, 43, 13, 43, 12, 41, 12, 41, 11, 40, 11, 40, 10, 38, 10, 38, 9, 37, 9, 37, 8, 35, 8, 35, 7, 34, 7, 34, 6, 32, 6, 32, 5, 30, 5, 30, 4, 28, 4, 28, 3, 25, 3, 25, 2, 22, 2, 22, 1, 18, 1, 18, 0, 6, 0)
+metadata/ShapeKey = "RingPlanet3_Shape"

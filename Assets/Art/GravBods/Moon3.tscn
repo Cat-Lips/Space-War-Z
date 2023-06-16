@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://cskyt3yjpwqhi"]
+
+[ext_resource type="Script" path="res://Game/2D/GravBod.cs" id="1_opalp"]
+[ext_resource type="Texture2D" uid="uid://bbjgco1h8svjg" path="res://Assets/Art/GravBods/GravBods/Moon3.png" id="2_6pfif"]
+[ext_resource type="Script" path="res://addons/GodotSharp.BuildingBlocks.Paint.Net/Components/SpriteScene.cs" id="3_tl1xy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gbkii"]
+size = Vector2(98, 98)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yp6vf"]
+radius = 49.679
+
+[node name="GravBod" type="AnimatableBody2D"]
+constant_angular_velocity = 1.74533
+script = ExtResource("1_opalp")
+
+[node name="Moon3" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, 1)
+texture = ExtResource("2_6pfif")
+script = ExtResource("3_tl1xy")
+metadata/Mass = 0.0
+
+[node name="Moon3_Rect" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_gbkii")
+metadata/ShapeKey = "Moon3_Shape"
+
+[node name="Moon3_Circle" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_yp6vf")
+metadata/ShapeKey = "Moon3_Shape"
+
+[node name="Moon3_Polygon" type="CollisionPolygon2D" parent="."]
+position = Vector2(-49, -48)
+polygon = PackedVector2Array(42, 1, 37, 1, 37, 2, 34, 2, 34, 3, 31, 3, 31, 4, 28, 4, 28, 5, 26, 5, 26, 6, 25, 6, 25, 7, 23, 7, 23, 8, 21, 8, 21, 9, 20, 9, 20, 10, 19, 10, 19, 11, 17, 11, 17, 12, 16, 12, 16, 13, 15, 13, 15, 14, 14, 14, 14, 15, 13, 15, 13, 16, 12, 16, 12, 17, 11, 17, 11, 19, 10, 19, 10, 20, 9, 20, 9, 21, 8, 21, 8, 23, 7, 23, 7, 25, 6, 25, 6, 26, 5, 26, 5, 28, 4, 28, 4, 31, 3, 31, 3, 34, 2, 34, 2, 37, 1, 37, 1, 42, 0, 42, 0, 56, 1, 56, 1, 61, 2, 61, 2, 64, 3, 64, 3, 67, 4, 67, 4, 70, 5, 70, 5, 72, 6, 72, 6, 73, 7, 73, 7, 75, 8, 75, 8, 77, 9, 77, 9, 78, 10, 78, 10, 79, 11, 79, 11, 81, 12, 81, 12, 82, 13, 82, 13, 83, 14, 83, 14, 84, 15, 84, 15, 85, 16, 85, 16, 86, 17, 86, 17, 87, 19, 87, 19, 88, 20, 88, 20, 89, 21, 89, 21, 90, 23, 90, 23, 91, 25, 91, 25, 92, 26, 92, 26, 93, 28, 93, 28, 94, 31, 94, 31, 95, 34, 95, 34, 96, 37, 96, 37, 97, 42, 97, 42, 98, 56, 98, 56, 97, 61, 97, 61, 96, 64, 96, 64, 95, 67, 95, 67, 94, 70, 94, 70, 93, 72, 93, 72, 92, 73, 92, 73, 91, 75, 91, 75, 90, 77, 90, 77, 89, 78, 89, 78, 88, 79, 88, 79, 87, 81, 87, 81, 86, 82, 86, 82, 85, 83, 85, 83, 84, 84, 84, 84, 83, 85, 83, 85, 82, 86, 82, 86, 81, 87, 81, 87, 79, 88, 79, 88, 78, 89, 78, 89, 77, 90, 77, 90, 75, 91, 75, 91, 73, 92, 73, 92, 72, 93, 72, 93, 70, 94, 70, 94, 67, 95, 67, 95, 64, 96, 64, 96, 61, 97, 61, 97, 56, 98, 56, 98, 42, 97, 42, 97, 37, 96, 37, 96, 34, 95, 34, 95, 31, 94, 31, 94, 28, 93, 28, 93, 26, 92, 26, 92, 25, 91, 25, 91, 23, 90, 23, 90, 21, 89, 21, 89, 20, 88, 20, 88, 19, 87, 19, 87, 17, 86, 17, 86, 16, 85, 16, 85, 15, 84, 15, 84, 14, 83, 14, 83, 13, 82, 13, 82, 12, 81, 12, 81, 11, 79, 11, 79, 10, 78, 10, 78, 9, 77, 9, 77, 8, 75, 8, 75, 7, 73, 7, 73, 6, 72, 6, 72, 5, 70, 5, 70, 4, 67, 4, 67, 3, 64, 3, 64, 2, 61, 2, 61, 1, 56, 1, 56, 0, 42, 0)
+metadata/ShapeKey = "Moon3_Shape"

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dh32ufswn3spb"]
+
+[ext_resource type="Script" path="res://addons/GodotSharp.BuildingBlocks/Components/GameTools/2D/Background.cs" id="1_vr3nb"]
+
+[node name="Background" type="ParallaxBackground"]
+scroll_ignore_camera_zoom = true
+script = ExtResource("1_vr3nb")
+Centered = true

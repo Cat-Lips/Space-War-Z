@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://dbu1p78n44yus"]
+
+[ext_resource type="Script" path="res://Game/2D/GravBod.cs" id="1_cstmt"]
+[ext_resource type="Texture2D" uid="uid://bdbpn1wii2nih" path="res://Assets/Art/GravBods/GravBods/Moon2.png" id="1_ukyf4"]
+[ext_resource type="Script" path="res://addons/GodotSharp.BuildingBlocks.Paint.Net/Components/SpriteScene.cs" id="2_x6dam"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_takdw"]
+size = Vector2(98, 98)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6qkl6"]
+radius = 49.679
+
+[node name="GravBod" type="AnimatableBody2D"]
+constant_angular_velocity = 1.74533
+script = ExtResource("1_cstmt")
+
+[node name="Moon2" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, 1)
+texture = ExtResource("1_ukyf4")
+script = ExtResource("2_x6dam")
+metadata/Mass = 0.0
+
+[node name="Moon2_Rect" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_takdw")
+metadata/ShapeKey = "Moon2_Shape"
+
+[node name="Moon2_Circle" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_6qkl6")
+metadata/ShapeKey = "Moon2_Shape"
+
+[node name="Moon2_Polygon" type="CollisionPolygon2D" parent="."]
+position = Vector2(-59, -58)
+polygon = PackedVector2Array(52, 11, 47, 11, 47, 12, 44, 12, 44, 13, 41, 13, 41, 14, 38, 14, 38, 15, 36, 15, 36, 16, 35, 16, 35, 17, 33, 17, 33, 18, 31, 18, 31, 19, 30, 19, 30, 20, 29, 20, 29, 21, 27, 21, 27, 22, 26, 22, 26, 23, 25, 23, 25, 24, 24, 24, 24, 25, 23, 25, 23, 26, 22, 26, 22, 27, 21, 27, 21, 29, 20, 29, 20, 30, 19, 30, 19, 31, 18, 31, 18, 33, 17, 33, 17, 35, 16, 35, 16, 36, 15, 36, 15, 38, 14, 38, 14, 41, 13, 41, 13, 44, 12, 44, 12, 47, 11, 47, 11, 52, 10, 52, 10, 66, 11, 66, 11, 71, 12, 71, 12, 74, 13, 74, 13, 77, 14, 77, 14, 80, 15, 80, 15, 82, 16, 82, 16, 83, 17, 83, 17, 85, 18, 85, 18, 87, 19, 87, 19, 88, 20, 88, 20, 89, 21, 89, 21, 91, 22, 91, 22, 92, 23, 92, 23, 93, 24, 93, 24, 94, 25, 94, 25, 95, 26, 95, 26, 96, 27, 96, 27, 97, 29, 97, 29, 98, 30, 98, 30, 99, 31, 99, 31, 100, 33, 100, 33, 101, 35, 101, 35, 102, 36, 102, 36, 103, 38, 103, 38, 104, 41, 104, 41, 105, 44, 105, 44, 106, 47, 106, 47, 107, 52, 107, 52, 108, 66, 108, 66, 107, 71, 107, 71, 106, 74, 106, 74, 105, 77, 105, 77, 104, 80, 104, 80, 103, 82, 103, 82, 102, 83, 102, 83, 101, 85, 101, 85, 100, 87, 100, 87, 99, 88, 99, 88, 98, 89, 98, 89, 97, 91, 97, 91, 96, 92, 96, 92, 95, 93, 95, 93, 94, 94, 94, 94, 93, 95, 93, 95, 92, 96, 92, 96, 91, 97, 91, 97, 89, 98, 89, 98, 88, 99, 88, 99, 87, 100, 87, 100, 85, 101, 85, 101, 83, 102, 83, 102, 82, 103, 82, 103, 80, 104, 80, 104, 77, 105, 77, 105, 74, 106, 74, 106, 71, 107, 71, 107, 66, 108, 66, 108, 52, 107, 52, 107, 47, 106, 47, 106, 44, 105, 44, 105, 41, 104, 41, 104, 38, 103, 38, 103, 36, 102, 36, 102, 35, 101, 35, 101, 33, 100, 33, 100, 31, 99, 31, 99, 30, 98, 30, 98, 29, 97, 29, 97, 27, 96, 27, 96, 26, 95, 26, 95, 25, 94, 25, 94, 24, 93, 24, 93, 23, 92, 23, 92, 22, 91, 22, 91, 21, 89, 21, 89, 20, 88, 20, 88, 19, 87, 19, 87, 18, 85, 18, 85, 17, 83, 17, 83, 16, 82, 16, 82, 15, 80, 15, 80, 14, 77, 14, 77, 13, 74, 13, 74, 12, 71, 12, 71, 11, 66, 11, 66, 10, 52, 10)
+metadata/ShapeKey = "Moon2_Shape"

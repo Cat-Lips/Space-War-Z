@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://b41sx3oomauuk"]
+
+[ext_resource type="Script" path="res://Game/2D/GravBod.cs" id="1_j3xw4"]
+[ext_resource type="Texture2D" uid="uid://c03s0x0f2lyn7" path="res://Assets/Art/GravBods/GravBods/Sun1.png" id="1_sylnm"]
+[ext_resource type="Script" path="res://addons/GodotSharp.BuildingBlocks.Paint.Net/Components/SpriteScene.cs" id="2_ugwqh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_njpkb"]
+size = Vector2(98, 98)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r3qhr"]
+radius = 50.0
+
+[node name="GravBod" type="AnimatableBody2D"]
+constant_angular_velocity = 1.74533
+script = ExtResource("1_j3xw4")
+
+[node name="Sun1" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -1)
+texture = ExtResource("1_sylnm")
+script = ExtResource("2_ugwqh")
+metadata/Mass = 0.0
+
+[node name="Sun1_Rect" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_njpkb")
+metadata/ShapeKey = "Sun1_Shape"
+
+[node name="Sun1_Circle" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_r3qhr")
+metadata/ShapeKey = "Sun1_Shape"
+
+[node name="Sun1_Polygon" type="CollisionPolygon2D" parent="."]
+position = Vector2(-49, -50)
+polygon = PackedVector2Array(41, 1, 36, 1, 36, 2, 33, 2, 33, 3, 30, 3, 30, 4, 28, 4, 28, 5, 26, 5, 26, 6, 24, 6, 24, 7, 22, 7, 22, 8, 21, 8, 21, 9, 19, 9, 19, 10, 18, 10, 18, 11, 17, 11, 17, 12, 16, 12, 16, 13, 15, 13, 15, 14, 14, 14, 14, 15, 13, 15, 13, 16, 12, 16, 12, 17, 11, 17, 11, 18, 10, 18, 10, 19, 9, 19, 9, 21, 8, 21, 8, 22, 7, 22, 7, 24, 6, 24, 6, 26, 5, 26, 5, 28, 4, 28, 4, 30, 3, 30, 3, 33, 2, 33, 2, 36, 1, 36, 1, 41, 0, 41, 0, 57, 1, 57, 1, 62, 2, 62, 2, 65, 3, 65, 3, 68, 4, 68, 4, 70, 5, 70, 5, 72, 6, 72, 6, 74, 7, 74, 7, 76, 8, 76, 8, 77, 9, 77, 9, 79, 10, 79, 10, 80, 11, 80, 11, 81, 12, 81, 12, 82, 13, 82, 13, 83, 14, 83, 14, 84, 15, 84, 15, 85, 16, 85, 16, 86, 17, 86, 17, 87, 18, 87, 18, 88, 19, 88, 19, 89, 21, 89, 21, 90, 22, 90, 22, 91, 24, 91, 24, 92, 26, 92, 26, 93, 28, 93, 28, 94, 30, 94, 30, 95, 33, 95, 33, 96, 36, 96, 36, 97, 41, 97, 41, 98, 57, 98, 57, 97, 62, 97, 62, 96, 65, 96, 65, 95, 68, 95, 68, 94, 70, 94, 70, 93, 72, 93, 72, 92, 74, 92, 74, 91, 76, 91, 76, 90, 77, 90, 77, 89, 79, 89, 79, 88, 80, 88, 80, 87, 81, 87, 81, 86, 82, 86, 82, 85, 83, 85, 83, 84, 84, 84, 84, 83, 85, 83, 85, 82, 86, 82, 86, 81, 87, 81, 87, 80, 88, 80, 88, 79, 89, 79, 89, 77, 90, 77, 90, 76, 91, 76, 91, 74, 92, 74, 92, 72, 93, 72, 93, 70, 94, 70, 94, 68, 95, 68, 95, 65, 96, 65, 96, 62, 97, 62, 97, 57, 98, 57, 98, 41, 97, 41, 97, 36, 96, 36, 96, 33, 95, 33, 95, 30, 94, 30, 94, 28, 93, 28, 93, 26, 92, 26, 92, 24, 91, 24, 91, 22, 90, 22, 90, 21, 89, 21, 89, 19, 88, 19, 88, 18, 87, 18, 87, 17, 86, 17, 86, 16, 85, 16, 85, 15, 84, 15, 84, 14, 83, 14, 83, 13, 82, 13, 82, 12, 81, 12, 81, 11, 80, 11, 80, 10, 79, 10, 79, 9, 77, 9, 77, 8, 76, 8, 76, 7, 74, 7, 74, 6, 72, 6, 72, 5, 70, 5, 70, 4, 68, 4, 68, 3, 65, 3, 65, 2, 62, 2, 62, 1, 57, 1, 57, 0, 41, 0)
+metadata/ShapeKey = "Sun1_Shape"

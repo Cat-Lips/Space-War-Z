@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://lwk2mtkfigc2"]
+
+[ext_resource type="Script" path="res://addons/GodotSharp.BuildingBlocks/Components/GameTools/GameInput.cs" id="1_3y78q"]
+
+[node name="GameInput" type="Node"]
+script = ExtResource("1_3y78q")

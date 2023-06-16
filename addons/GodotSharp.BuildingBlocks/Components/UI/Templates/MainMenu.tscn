@@ -1,0 +1,151 @@
+[gd_scene load_steps=5 format=3 uid="uid://bj1sgyr15iasp"]
+
+[ext_resource type="PackedScene" uid="uid://ccvamcichbv4j" path="res://addons/GodotSharp.BuildingBlocks/Components/UI/Root.tscn" id="1_w4ted"]
+[ext_resource type="Script" path="res://addons/GodotSharp.BuildingBlocks/Components/UI/Templates/MainMenu.cs" id="2_6616o"]
+[ext_resource type="PackedScene" uid="uid://1vjhhc14uk15" path="res://addons/GodotSharp.BuildingBlocks/Components/UI/Templates/Parts/FlowMenu.tscn" id="2_s4y5x"]
+[ext_resource type="PackedScene" uid="uid://co5oo3ajvuw42" path="res://addons/GodotSharp.BuildingBlocks/Components/Network/Controls/PortEdit.tscn" id="3_fp3g1"]
+
+[node name="MainMenu" instance=ExtResource("1_w4ted")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 794.0
+offset_bottom = 156.0
+grow_horizontal = 1
+grow_vertical = 1
+script = ExtResource("2_6616o")
+
+[node name="Layout" type="VBoxContainer" parent="Panel/Margin" index="0"]
+layout_mode = 2
+
+[node name="ServerMenu" parent="Panel/Margin/Layout" index="0" instance=ExtResource("2_s4y5x")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="MenuLabel" parent="Panel/Margin/Layout/ServerMenu" index="0"]
+text = "Server > "
+
+[node name="StartServer" type="Button" parent="Panel/Margin/Layout/ServerMenu/MenuItems" index="0"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Start Server"
+
+[node name="StopServer" type="Button" parent="Panel/Margin/Layout/ServerMenu/MenuItems" index="1"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Stop Server"
+
+[node name="Sep" type="VSeparator" parent="Panel/Margin/Layout/ServerMenu/MenuItems" index="2"]
+layout_mode = 2
+
+[node name="ServerAddress" type="LineEdit" parent="Panel/Margin/Layout/ServerMenu/MenuItems" index="3"]
+unique_name_in_owner = true
+layout_mode = 2
+placeholder_text = "Server Address"
+editable = false
+expand_to_text_length = true
+
+[node name="PortSeparator" type="Label" parent="Panel/Margin/Layout/ServerMenu/MenuItems" index="4"]
+layout_mode = 2
+text = ":"
+
+[node name="ServerPort" parent="Panel/Margin/Layout/ServerMenu/MenuItems" index="5" instance=ExtResource("3_fp3g1")]
+unique_name_in_owner = true
+layout_mode = 2
+min_value = 49152.0
+max_value = 65534.0
+value = 54433.0
+
+[node name="End" type="VSeparator" parent="Panel/Margin/Layout/ServerMenu/MenuItems" index="6"]
+layout_mode = 2
+
+[node name="ServerStatus" type="Label" parent="Panel/Margin/Layout/ServerMenu" index="2"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "(not running)"
+
+[node name="ClientMenu" parent="Panel/Margin/Layout" index="1" instance=ExtResource("2_s4y5x")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="MenuLabel" parent="Panel/Margin/Layout/ClientMenu" index="0"]
+text = "Client > "
+
+[node name="CreateClient" type="Button" parent="Panel/Margin/Layout/ClientMenu/MenuItems" index="0"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Connect to Server"
+
+[node name="CloseClient" type="Button" parent="Panel/Margin/Layout/ClientMenu/MenuItems" index="1"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Disconnect from Server"
+
+[node name="Sep" type="VSeparator" parent="Panel/Margin/Layout/ClientMenu/MenuItems" index="2"]
+layout_mode = 2
+
+[node name="ConnectAddress" type="LineEdit" parent="Panel/Margin/Layout/ClientMenu/MenuItems" index="3"]
+unique_name_in_owner = true
+layout_mode = 2
+placeholder_text = "Server Address"
+expand_to_text_length = true
+clear_button_enabled = true
+
+[node name="PortSeparator" type="Label" parent="Panel/Margin/Layout/ClientMenu/MenuItems" index="4"]
+layout_mode = 2
+text = ":"
+
+[node name="ConnectPort" parent="Panel/Margin/Layout/ClientMenu/MenuItems" index="5" instance=ExtResource("3_fp3g1")]
+unique_name_in_owner = true
+layout_mode = 2
+min_value = 49152.0
+max_value = 65534.0
+value = 54433.0
+
+[node name="End" type="VSeparator" parent="Panel/Margin/Layout/ClientMenu/MenuItems" index="6"]
+layout_mode = 2
+
+[node name="ClientStatus" type="Label" parent="Panel/Margin/Layout/ClientMenu" index="2"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "(not connected)"
+
+[node name="PlayerMenu" parent="Panel/Margin/Layout" index="2" instance=ExtResource("2_s4y5x")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="MenuLabel" parent="Panel/Margin/Layout/PlayerMenu" index="0"]
+text = "Player > "
+
+[node name="PlayerName" type="LineEdit" parent="Panel/Margin/Layout/PlayerMenu/MenuItems" index="0"]
+unique_name_in_owner = true
+layout_mode = 2
+placeholder_text = "Player Name"
+expand_to_text_length = true
+
+[node name="GameMenu" parent="Panel/Margin/Layout" index="3" instance=ExtResource("2_s4y5x")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="MenuLabel" parent="Panel/Margin/Layout/GameMenu" index="0"]
+text = "Game > "
+
+[node name="GameOptions" type="MenuButton" parent="Panel/Margin/Layout/GameMenu/MenuItems" index="0"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Options"
+flat = false
+switch_on_hover = true
+
+[node name="Sep" type="VSeparator" parent="Panel/Margin/Layout/GameMenu/MenuItems" index="1"]
+layout_mode = 2
+
+[node name="Quit" type="Button" parent="Panel/Margin/Layout/GameMenu/MenuItems" index="2"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Quit"
+
+[editable path="Panel/Margin/Layout/ServerMenu"]
+[editable path="Panel/Margin/Layout/ClientMenu"]
+[editable path="Panel/Margin/Layout/PlayerMenu"]
+[editable path="Panel/Margin/Layout/GameMenu"]

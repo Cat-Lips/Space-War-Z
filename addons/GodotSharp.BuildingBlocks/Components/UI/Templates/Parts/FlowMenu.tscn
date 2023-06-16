@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://1vjhhc14uk15"]
+
+[ext_resource type="Script" path="res://addons/GodotSharp.BuildingBlocks/Components/UI/Templates/Parts/FlowMenu.cs" id="1_14u54"]
+
+[node name="FlowMenu" type="HBoxContainer"]
+script = ExtResource("1_14u54")
+
+[node name="MenuLabel" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 0
+
+[node name="MenuItems" type="HBoxContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 2

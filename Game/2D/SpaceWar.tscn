@@ -1,0 +1,45 @@
+[gd_scene load_steps=28 format=3 uid="uid://cb727atl5nppg"]
+
+[ext_resource type="Script" path="res://Game/2D/SpaceWar.cs" id="1_xl7v3"]
+[ext_resource type="PackedScene" uid="uid://beylk8q3mhqwh" path="res://Assets/Art/Ships/Ship1.tscn" id="2_0isbo"]
+[ext_resource type="PackedScene" uid="uid://bdcj0m2tx7s5n" path="res://Assets/Art/Ships/Ship2.tscn" id="3_lii7j"]
+[ext_resource type="PackedScene" uid="uid://0rtto8f12fid" path="res://Assets/Art/Ships/Ship3.tscn" id="4_b60um"]
+[ext_resource type="PackedScene" uid="uid://ddut6cecguf4u" path="res://Assets/Art/Ships/Ship4.tscn" id="5_os02l"]
+[ext_resource type="PackedScene" uid="uid://jac8c5cxa14m" path="res://Assets/Art/Ships/Ship5.tscn" id="6_gid6o"]
+[ext_resource type="PackedScene" uid="uid://ckfrb2ww38p8i" path="res://Assets/Art/Ships/Ship6.tscn" id="7_gnkmr"]
+[ext_resource type="PackedScene" uid="uid://cdvni0srbnt8i" path="res://Assets/Art/GravBods/Asteroid1.tscn" id="8_uadqb"]
+[ext_resource type="PackedScene" uid="uid://dv6ccmwaihqbx" path="res://Assets/Art/GravBods/Asteroid2.tscn" id="9_ous54"]
+[ext_resource type="PackedScene" uid="uid://bvy38xhsisrw1" path="res://Assets/Art/GravBods/GasGiant1.tscn" id="10_afdnt"]
+[ext_resource type="PackedScene" uid="uid://bdduvurlga3o8" path="res://Assets/Art/GravBods/GasGiant2.tscn" id="11_s32wr"]
+[ext_resource type="PackedScene" uid="uid://b35fn8cnlidku" path="res://Assets/Art/GravBods/Moon1.tscn" id="12_dkma0"]
+[ext_resource type="PackedScene" uid="uid://dbu1p78n44yus" path="res://Assets/Art/GravBods/Moon2.tscn" id="13_qmlij"]
+[ext_resource type="PackedScene" uid="uid://bohlv28inhxwi" path="res://Assets/Art/GravBods/Planet1.tscn" id="14_7mrrc"]
+[ext_resource type="PackedScene" uid="uid://bmfdg278ie64h" path="res://Assets/Art/GravBods/Planet2.tscn" id="15_86mrr"]
+[ext_resource type="PackedScene" uid="uid://dl41ydj4bcayy" path="res://Assets/Art/GravBods/RingPlanet1.tscn" id="16_1opp8"]
+[ext_resource type="PackedScene" uid="uid://dbo7d3qdn5qsk" path="res://Assets/Art/GravBods/RingPlanet2.tscn" id="17_gdet4"]
+[ext_resource type="PackedScene" uid="uid://tsa1tid57tuc" path="res://Assets/Art/GravBods/RingPlanet3.tscn" id="18_cqaeb"]
+[ext_resource type="PackedScene" uid="uid://b41sx3oomauuk" path="res://Assets/Art/GravBods/Sun1.tscn" id="19_ckpws"]
+[ext_resource type="PackedScene" uid="uid://ynml5tw5b4l2" path="res://Assets/Art/GravBods/Sun2.tscn" id="20_yqnh0"]
+[ext_resource type="PackedScene" uid="uid://i653ecosnvev" path="res://Assets/Art/GravBods/Swirl1.tscn" id="21_kj8y7"]
+[ext_resource type="PackedScene" uid="uid://dyc0trg0kmw24" path="res://Assets/Art/GravBods/Swirl2.tscn" id="22_0ctkg"]
+[ext_resource type="PackedScene" uid="uid://t1jo7lgifd35" path="res://Assets/Art/Ships/Explosions.tscn" id="23_1vyy8"]
+[ext_resource type="PackedScene" uid="uid://bgs8e7vgvaavh" path="res://addons/GodotSharp.BuildingBlocks/Components/GameTools/2D/Camera.tscn" id="24_u8kou"]
+[ext_resource type="PackedScene" uid="uid://dh32ufswn3spb" path="res://addons/GodotSharp.BuildingBlocks/Components/GameTools/2D/Background.tscn" id="25_pvy0o"]
+[ext_resource type="PackedScene" uid="uid://ba5fgbcemadcg" path="res://addons/GodotSharp.BuildingBlocks/Components/GameTools/2D/Gravity.tscn" id="25_tmdas"]
+[ext_resource type="Texture2D" uid="uid://m8pkpe2p6kxg" path="res://Assets/Art/background.png" id="26_agb7l"]
+
+[node name="SpaceWar" type="Node2D"]
+script = ExtResource("1_xl7v3")
+Ships = [ExtResource("2_0isbo"), ExtResource("3_lii7j"), ExtResource("4_b60um"), ExtResource("5_os02l"), ExtResource("6_gid6o"), ExtResource("7_gnkmr")]
+GravBods = [ExtResource("8_uadqb"), ExtResource("9_ous54"), ExtResource("10_afdnt"), ExtResource("11_s32wr"), ExtResource("12_dkma0"), ExtResource("13_qmlij"), ExtResource("14_7mrrc"), ExtResource("15_86mrr"), ExtResource("16_1opp8"), ExtResource("17_gdet4"), ExtResource("18_cqaeb"), ExtResource("19_ckpws"), ExtResource("20_yqnh0"), ExtResource("21_kj8y7"), ExtResource("22_0ctkg")]
+Explosions = [ExtResource("23_1vyy8")]
+
+[node name="Background" parent="." instance=ExtResource("25_pvy0o")]
+unique_name_in_owner = true
+Layers = [ExtResource("26_agb7l")]
+
+[node name="Gravity" parent="." instance=ExtResource("25_tmdas")]
+unique_name_in_owner = true
+
+[node name="Camera" parent="." instance=ExtResource("24_u8kou")]
+unique_name_in_owner = true

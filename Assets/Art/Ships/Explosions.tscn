@@ -1,0 +1,196 @@
+[gd_scene load_steps=36 format=3 uid="uid://t1jo7lgifd35"]
+
+[ext_resource type="Texture2D" uid="uid://dd7qmfylyna4f" path="res://Assets/Art/Ships/Explosions/Explosion1/Explosion1_1.png" id="1_gnt8e"]
+[ext_resource type="Texture2D" uid="uid://kmqqlqqmrlnm" path="res://Assets/Art/Ships/Explosions/Explosion1/Explosion1_2.png" id="2_yn8qa"]
+[ext_resource type="Texture2D" uid="uid://bn0l15bka66mc" path="res://Assets/Art/Ships/Explosions/Explosion1/Explosion1_3.png" id="3_7woxv"]
+[ext_resource type="Texture2D" uid="uid://v4ao5m7osux1" path="res://Assets/Art/Ships/Explosions/Explosion1/Explosion1_4.png" id="4_fbmx6"]
+[ext_resource type="Texture2D" uid="uid://w72f4cxd6cxk" path="res://Assets/Art/Ships/Explosions/Explosion1/Explosion1_5.png" id="5_hchmg"]
+[ext_resource type="Texture2D" uid="uid://c4vr2rser5b8x" path="res://Assets/Art/Ships/Explosions/Explosion1/Explosion1_6.png" id="6_21kb3"]
+[ext_resource type="Texture2D" uid="uid://b6scxqm4xcvjj" path="res://Assets/Art/Ships/Explosions/Explosion1/Explosion1_7.png" id="7_jbuob"]
+[ext_resource type="Texture2D" uid="uid://bhymxemkkax6y" path="res://Assets/Art/Ships/Explosions/Explosion1/Explosion1_8.png" id="8_u102b"]
+[ext_resource type="Texture2D" uid="uid://c88reu6ic6t8j" path="res://Assets/Art/Ships/Explosions/Explosion1/Explosion1_9.png" id="9_7smhq"]
+[ext_resource type="Texture2D" uid="uid://djrwxhdxnb14b" path="res://Assets/Art/Ships/Explosions/Explosion1/Explosion1_10.png" id="10_amnm7"]
+[ext_resource type="Texture2D" uid="uid://di1v34nigyagp" path="res://Assets/Art/Ships/Explosions/Explosion1/Explosion1_11.png" id="11_3ijgj"]
+[ext_resource type="Texture2D" uid="uid://cnoyigvo4sbnr" path="res://Assets/Art/Ships/Explosions/Explosion2/Explosion2_1.png" id="12_dp8pn"]
+[ext_resource type="Texture2D" uid="uid://skgcc4sy3eo8" path="res://Assets/Art/Ships/Explosions/Explosion2/Explosion2_2.png" id="13_ep4aw"]
+[ext_resource type="Texture2D" uid="uid://cpy6e7dn3vhp3" path="res://Assets/Art/Ships/Explosions/Explosion2/Explosion2_3.png" id="14_6qnn7"]
+[ext_resource type="Texture2D" uid="uid://dem1ds02tugkv" path="res://Assets/Art/Ships/Explosions/Explosion2/Explosion2_4.png" id="15_ti3jt"]
+[ext_resource type="Texture2D" uid="uid://3idk7thur78g" path="res://Assets/Art/Ships/Explosions/Explosion2/Explosion2_5.png" id="16_g0rts"]
+[ext_resource type="Texture2D" uid="uid://bmfjxd8jftwqj" path="res://Assets/Art/Ships/Explosions/Explosion2/Explosion2_6.png" id="17_cuefu"]
+[ext_resource type="Texture2D" uid="uid://dxwl58wnm4wu" path="res://Assets/Art/Ships/Explosions/Explosion2/Explosion2_7.png" id="18_6wwae"]
+[ext_resource type="Texture2D" uid="uid://bxxgxa207458j" path="res://Assets/Art/Ships/Explosions/Explosion2/Explosion2_8.png" id="19_kctx7"]
+[ext_resource type="Texture2D" uid="uid://dwvss1dvhahw3" path="res://Assets/Art/Ships/Explosions/Explosion2/Explosion2_9.png" id="20_14vtk"]
+[ext_resource type="Texture2D" uid="uid://bgqi2u6n32mne" path="res://Assets/Art/Ships/Explosions/Explosion2/Explosion2_10.png" id="21_5m3fh"]
+[ext_resource type="Texture2D" uid="uid://dv1iwu6ko34mo" path="res://Assets/Art/Ships/Explosions/Explosion2/Explosion2_11.png" id="22_022t0"]
+[ext_resource type="Texture2D" uid="uid://d2ivhaq7qaw4y" path="res://Assets/Art/Ships/Explosions/Explosion3/Explosion3_1.png" id="23_dt04k"]
+[ext_resource type="Texture2D" uid="uid://do3wqgkk1sgnh" path="res://Assets/Art/Ships/Explosions/Explosion3/Explosion3_2.png" id="24_8ikua"]
+[ext_resource type="Texture2D" uid="uid://bo50gngvja3wh" path="res://Assets/Art/Ships/Explosions/Explosion3/Explosion3_3.png" id="25_nv3xe"]
+[ext_resource type="Texture2D" uid="uid://c0ssj1x0rsiq7" path="res://Assets/Art/Ships/Explosions/Explosion3/Explosion3_4.png" id="26_gwi0g"]
+[ext_resource type="Texture2D" uid="uid://c26d88a1xrdcp" path="res://Assets/Art/Ships/Explosions/Explosion3/Explosion3_5.png" id="27_nne4r"]
+[ext_resource type="Texture2D" uid="uid://coh17ljlgr3ts" path="res://Assets/Art/Ships/Explosions/Explosion3/Explosion3_6.png" id="28_d2gxg"]
+[ext_resource type="Texture2D" uid="uid://di03cbgfhwja3" path="res://Assets/Art/Ships/Explosions/Explosion3/Explosion3_7.png" id="29_ya41p"]
+[ext_resource type="Texture2D" uid="uid://kv22auquxrwb" path="res://Assets/Art/Ships/Explosions/Explosion3/Explosion3_8.png" id="30_4vwle"]
+[ext_resource type="Texture2D" uid="uid://de24kqqgjxgqp" path="res://Assets/Art/Ships/Explosions/Explosion3/Explosion3_9.png" id="31_gmct4"]
+[ext_resource type="Texture2D" uid="uid://c57bao7qh77rs" path="res://Assets/Art/Ships/Explosions/Explosion3/Explosion3_10.png" id="32_yulhj"]
+[ext_resource type="Texture2D" uid="uid://dmu1nhpep32ef" path="res://Assets/Art/Ships/Explosions/Explosion3/Explosion3_11.png" id="33_jpqtf"]
+[ext_resource type="Script" path="res://addons/GodotSharp.BuildingBlocks.Paint.Net/Components/AnimatedSpriteScene.cs" id="34_snj44"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wveuv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gnt8e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_yn8qa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7woxv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fbmx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_hchmg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_21kb3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_jbuob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_u102b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_7smhq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_amnm7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_3ijgj")
+}],
+"loop": false,
+"name": &"Explosion1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_dp8pn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ep4aw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_6qnn7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ti3jt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_g0rts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_cuefu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_6wwae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_kctx7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_14vtk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_5m3fh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_022t0")
+}],
+"loop": false,
+"name": &"Explosion2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_dt04k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_8ikua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_nv3xe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_gwi0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_nne4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_d2gxg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ya41p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_4vwle")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_gmct4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_yulhj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_jpqtf")
+}],
+"loop": false,
+"name": &"Explosion3",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Explosions" type="AnimatedSprite2D"]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_wveuv")
+script = ExtResource("34_snj44")
+metadata/Explosion1_0_Offset = Vector2(0.5, 0.5)
+metadata/Explosion1_1_Offset = Vector2(0.5, 0.5)
+metadata/Explosion1_2_Offset = Vector2(0.5, 0.5)
+metadata/Explosion1_3_Offset = Vector2(0.5, 0.5)
+metadata/Explosion1_4_Offset = Vector2(0.5, 0.5)
+metadata/Explosion1_5_Offset = Vector2(0.5, 0.5)
+metadata/Explosion1_6_Offset = Vector2(0.5, 0.5)
+metadata/Explosion1_7_Offset = Vector2(0.5, 0.5)
+metadata/Explosion1_8_Offset = Vector2(0.5, 0.5)
+metadata/Explosion1_9_Offset = Vector2(0.5, 0.5)
+metadata/Explosion1_10_Offset = Vector2(0.5, 0.5)
+metadata/Explosion2_0_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion2_1_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion2_2_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion2_3_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion2_4_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion2_5_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion2_6_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion2_7_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion2_8_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion2_9_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion2_10_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion3_0_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion3_1_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion3_2_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion3_3_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion3_4_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion3_5_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion3_6_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion3_7_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion3_8_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion3_9_Offset = Vector2(-0.5, 0.5)
+metadata/Explosion3_10_Offset = Vector2(-0.5, 0.5)

@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=3 uid="uid://ox3jnuicgdm3"]
+
+[ext_resource type="Script" path="res://Game/Main.cs" id="1_84yhh"]
+[ext_resource type="PackedScene" uid="uid://cb727atl5nppg" path="res://Game/2D/SpaceWar.tscn" id="2_6w3uu"]
+[ext_resource type="PackedScene" uid="uid://diirptjau1mkv" path="res://addons/GodotSharp.BuildingBlocks/Components/Network/Network.tscn" id="2_unbs3"]
+[ext_resource type="PackedScene" uid="uid://bj1sgyr15iasp" path="res://addons/GodotSharp.BuildingBlocks/Components/UI/Templates/MainMenu.tscn" id="4_frmpc"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_84yhh")
+
+[node name="Network" parent="." instance=ExtResource("2_unbs3")]
+
+[node name="SpaceWar" parent="." instance=ExtResource("2_6w3uu")]
+
+[node name="MainMenu" parent="." instance=ExtResource("4_frmpc")]

@@ -1,0 +1,655 @@
+[gd_scene load_steps=68 format=3 uid="uid://ddut6cecguf4u"]
+
+[ext_resource type="Script" path="res://Game/2D/Ship.cs" id="1_0epw7"]
+[ext_resource type="Texture2D" uid="uid://doqcpmd80ffbe" path="res://Assets/Art/Ships/Ship4/Ship4/Tubes.png" id="1_hvdj0"]
+[ext_resource type="Script" path="res://addons/GodotSharp.BuildingBlocks.Paint.Net/Components/SpriteScene.cs" id="2_0i4tc"]
+[ext_resource type="Texture2D" uid="uid://ca0jc1fljqdda" path="res://Assets/Art/Ships/Ship4/Ship4/Tail.png" id="3_6bnjn"]
+[ext_resource type="Texture2D" uid="uid://6jgp43v6b77j" path="res://Assets/Art/Ships/Ship4/Ship4/Detail.png" id="4_3y027"]
+[ext_resource type="Texture2D" uid="uid://dppi27ndica2r" path="res://Assets/Art/Ships/Ship4/Ship4/Windows.png" id="5_c88u2"]
+[ext_resource type="Texture2D" uid="uid://5em1p00ooew2" path="res://Assets/Art/Ships/Ship4/Ship4/Body2.png" id="6_ixdkg"]
+[ext_resource type="Texture2D" uid="uid://fi371n0b2gso" path="res://Assets/Art/Ships/Ship4/Ship4/Body1.png" id="7_fs66o"]
+[ext_resource type="Texture2D" uid="uid://co6gn2p8mmcg0" path="res://Assets/Art/Ships/Ship4/Ship4/BodyDetail.png" id="8_qe11i"]
+[ext_resource type="Texture2D" uid="uid://c4g0ehl2sjux8" path="res://Assets/Art/Ships/Ship4/Ship4/Ship4.png" id="9_uglom"]
+[ext_resource type="Texture2D" uid="uid://d2204d85lyuyq" path="res://Assets/Art/Ships/Ship4/Exhaust/NormalExhaust1/exhaust1.png" id="10_k0fvx"]
+[ext_resource type="Texture2D" uid="uid://ns13msibp78s" path="res://Assets/Art/Ships/Ship4/Exhaust/NormalExhaust1/exhaust2.png" id="11_patph"]
+[ext_resource type="Texture2D" uid="uid://drsqfua2vibhc" path="res://Assets/Art/Ships/Ship4/Exhaust/NormalExhaust1/exhaust3.png" id="12_cj8mk"]
+[ext_resource type="Texture2D" uid="uid://dr346rx4tixy5" path="res://Assets/Art/Ships/Ship4/Exhaust/NormalExhaust1/exhaust4.png" id="13_q86h6"]
+[ext_resource type="Texture2D" uid="uid://c0fvaif7ighwe" path="res://Assets/Art/Ships/Ship4/Exhaust/NormalExhaust2/exhaust1.png" id="14_lnesg"]
+[ext_resource type="Texture2D" uid="uid://dfpuimu3lf8to" path="res://Assets/Art/Ships/Ship4/Exhaust/NormalExhaust2/exhaust2.png" id="15_wrrfd"]
+[ext_resource type="Texture2D" uid="uid://bmx5mkql7kbyg" path="res://Assets/Art/Ships/Ship4/Exhaust/NormalExhaust2/exhaust3.png" id="16_jte1i"]
+[ext_resource type="Texture2D" uid="uid://cp6i4tccoog04" path="res://Assets/Art/Ships/Ship4/Exhaust/NormalExhaust2/exhaust4.png" id="17_sm6bq"]
+[ext_resource type="Texture2D" uid="uid://dmrnrf12c2jo8" path="res://Assets/Art/Ships/Ship4/Exhaust/NormalExhaust3/exhaust1.png" id="18_8suvn"]
+[ext_resource type="Texture2D" uid="uid://wphwlg4c4gte" path="res://Assets/Art/Ships/Ship4/Exhaust/NormalExhaust3/exhaust2.png" id="19_d8yrt"]
+[ext_resource type="Texture2D" uid="uid://ciqf17xg8lv34" path="res://Assets/Art/Ships/Ship4/Exhaust/NormalExhaust3/exhaust3.png" id="20_6mrhg"]
+[ext_resource type="Texture2D" uid="uid://co3rffpkf6i7p" path="res://Assets/Art/Ships/Ship4/Exhaust/NormalExhaust3/exhaust4.png" id="21_qihq3"]
+[ext_resource type="Texture2D" uid="uid://cxnv0xcqj74rl" path="res://Assets/Art/Ships/Ship4/Exhaust/TurboExhaust1/exhaust1.png" id="22_3kial"]
+[ext_resource type="Texture2D" uid="uid://6pw4qhee58wr" path="res://Assets/Art/Ships/Ship4/Exhaust/TurboExhaust1/exhaust2.png" id="23_h0724"]
+[ext_resource type="Texture2D" uid="uid://drhn3bxp5fwhb" path="res://Assets/Art/Ships/Ship4/Exhaust/TurboExhaust1/exhaust3.png" id="24_aw105"]
+[ext_resource type="Texture2D" uid="uid://bok2uem3mdsrf" path="res://Assets/Art/Ships/Ship4/Exhaust/TurboExhaust1/exhaust4.png" id="25_yjh6d"]
+[ext_resource type="Texture2D" uid="uid://dn3vlruea4dvt" path="res://Assets/Art/Ships/Ship4/Exhaust/TurboExhaust2/exhaust1.png" id="26_wx5bq"]
+[ext_resource type="Texture2D" uid="uid://cal2vsdw56bec" path="res://Assets/Art/Ships/Ship4/Exhaust/TurboExhaust2/exhaust2.png" id="27_ruqkm"]
+[ext_resource type="Texture2D" uid="uid://cqp5m8hx3oqeg" path="res://Assets/Art/Ships/Ship4/Exhaust/TurboExhaust2/exhaust3.png" id="28_f1o58"]
+[ext_resource type="Texture2D" uid="uid://b5co1yspud2kl" path="res://Assets/Art/Ships/Ship4/Exhaust/TurboExhaust2/exhaust4.png" id="29_sgywc"]
+[ext_resource type="Texture2D" uid="uid://clxwdujika2w1" path="res://Assets/Art/Ships/Ship4/Exhaust/TurboExhaust3/exhaust1.png" id="30_gkbsx"]
+[ext_resource type="Texture2D" uid="uid://sa0slpnd160o" path="res://Assets/Art/Ships/Ship4/Exhaust/TurboExhaust3/exhaust2.png" id="31_p2y04"]
+[ext_resource type="Texture2D" uid="uid://c42uaiwkr3kad" path="res://Assets/Art/Ships/Ship4/Exhaust/TurboExhaust3/exhaust3.png" id="32_28on8"]
+[ext_resource type="Texture2D" uid="uid://bnw24cxq01wiu" path="res://Assets/Art/Ships/Ship4/Exhaust/TurboExhaust3/exhaust4.png" id="33_x5cs1"]
+[ext_resource type="Script" path="res://addons/GodotSharp.BuildingBlocks.Paint.Net/Components/AnimatedSpriteScene.cs" id="34_y8gfk"]
+[ext_resource type="Texture2D" uid="uid://hqjwdtpteala" path="res://Assets/Art/Ships/Ship4/Shot4/Asset/shot4_asset.png" id="35_v3k8c"]
+[ext_resource type="Texture2D" uid="uid://byqs2ht0divl6" path="res://Assets/Art/Ships/Ship4/Shot4/Exp/shot4_exp1.png" id="36_yu4ha"]
+[ext_resource type="Texture2D" uid="uid://hdhc2ypoqgib" path="res://Assets/Art/Ships/Ship4/Shot4/Exp/shot4_exp2.png" id="37_s673d"]
+[ext_resource type="Texture2D" uid="uid://b22bspo4tn8f4" path="res://Assets/Art/Ships/Ship4/Shot4/Exp/shot4_exp3.png" id="38_yrm1o"]
+[ext_resource type="Texture2D" uid="uid://buhtx3ercvndg" path="res://Assets/Art/Ships/Ship4/Shot4/Exp/shot4_exp4.png" id="39_15del"]
+[ext_resource type="Texture2D" uid="uid://1focseef0apr" path="res://Assets/Art/Ships/Ship4/Shot4/Exp/shot4_exp5.png" id="40_4k7rt"]
+[ext_resource type="Texture2D" uid="uid://c2gr78wm0qex2" path="res://Assets/Art/Ships/Ship4/Shot4/Exp/shot4_exp6.png" id="41_02psa"]
+[ext_resource type="Texture2D" uid="uid://b3jkpv0g83e2a" path="res://Assets/Art/Ships/Ship4/Shot4/Exp/shot4_exp7.png" id="42_or4dx"]
+[ext_resource type="Texture2D" uid="uid://b7nek8jp2krah" path="res://Assets/Art/Ships/Ship4/Shot4/Exp/shot4_exp8.png" id="43_6itvg"]
+[ext_resource type="Texture2D" uid="uid://ddyi6sx67xavt" path="res://Assets/Art/Ships/Ship4/Shot4/Shot/shot4_1.png" id="44_ba4tc"]
+[ext_resource type="Texture2D" uid="uid://ds1574788sqh0" path="res://Assets/Art/Ships/Ship4/Shot4/Shot/shot4_2.png" id="45_xmxmc"]
+[ext_resource type="Texture2D" uid="uid://dougdi30g7j8v" path="res://Assets/Art/Ships/Ship4/Shot4/Shot/shot4_3.png" id="46_2eo35"]
+[ext_resource type="Texture2D" uid="uid://brvbf6oqx1k4o" path="res://Assets/Art/Ships/Ship4/Shot4/Shot/shot4_4.png" id="47_1ilf8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8cnj4"]
+size = Vector2(12, 27)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0k1ib"]
+radius = 13.9463
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ywvil"]
+size = Vector2(29, 33)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_syqo3"]
+radius = 19.7071
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_arw7b"]
+size = Vector2(59, 46)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xhmwn"]
+radius = 34.1392
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gh5ql"]
+size = Vector2(52, 15)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_75j3r"]
+radius = 26.2345
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pvxob"]
+size = Vector2(32, 29)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8pua4"]
+radius = 20.9344
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cxm0s"]
+size = Vector2(38, 24)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6jgg4"]
+radius = 19.6129
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_75d6k"]
+size = Vector2(60, 33)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ernkh"]
+radius = 31.9023
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7b4br"]
+size = Vector2(96, 46)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1gx7u"]
+radius = 49.0971
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a5w08"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_k0fvx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_patph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_cj8mk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_q86h6")
+}],
+"loop": true,
+"name": &"NormalExhaust1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_lnesg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_wrrfd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_jte1i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_sm6bq")
+}],
+"loop": true,
+"name": &"NormalExhaust2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_8suvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_d8yrt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_6mrhg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_qihq3")
+}],
+"loop": true,
+"name": &"NormalExhaust3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_3kial")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_h0724")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_aw105")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_yjh6d")
+}],
+"loop": true,
+"name": &"TurboExhaust1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_wx5bq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_ruqkm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_f1o58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_sgywc")
+}],
+"loop": true,
+"name": &"TurboExhaust2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_gkbsx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_p2y04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_28on8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_x5cs1")
+}],
+"loop": true,
+"name": &"TurboExhaust3",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uw58i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_k0fvx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_patph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_cj8mk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_q86h6")
+}],
+"loop": true,
+"name": &"NormalExhaust1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_lnesg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_wrrfd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_jte1i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_sm6bq")
+}],
+"loop": true,
+"name": &"NormalExhaust2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_8suvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_d8yrt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_6mrhg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_qihq3")
+}],
+"loop": true,
+"name": &"NormalExhaust3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_3kial")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_h0724")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_aw105")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_yjh6d")
+}],
+"loop": true,
+"name": &"TurboExhaust1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_wx5bq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_ruqkm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_f1o58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_sgywc")
+}],
+"loop": true,
+"name": &"TurboExhaust2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_gkbsx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_p2y04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_28on8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_x5cs1")
+}],
+"loop": true,
+"name": &"TurboExhaust3",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8i4lh"]
+animations = [{
+"frames": [{
+"duration": 0.01,
+"texture": ExtResource("35_v3k8c")
+}],
+"loop": false,
+"name": &"Asset",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("36_yu4ha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_s673d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_yrm1o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_15del")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_4k7rt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_02psa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_or4dx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_6itvg")
+}],
+"loop": false,
+"name": &"Exp",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("44_ba4tc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_xmxmc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_2eo35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_1ilf8")
+}],
+"loop": false,
+"name": &"Shot",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Ship" type="RigidBody2D"]
+script = ExtResource("1_0epw7")
+
+[node name="Tubes" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-42, 1.5)
+texture = ExtResource("1_hvdj0")
+script = ExtResource("2_0i4tc")
+metadata/Mass = 0.0
+
+[node name="Tubes_Rect" type="CollisionShape2D" parent="."]
+position = Vector2(-42, 1.5)
+shape = SubResource("RectangleShape2D_8cnj4")
+metadata/ShapeKey = "Tubes_Shape"
+
+[node name="Tubes_Circle" type="CollisionShape2D" parent="."]
+position = Vector2(-43.5, 1.5)
+shape = SubResource("CircleShape2D_0k1ib")
+metadata/ShapeKey = "Tubes_Shape"
+
+[node name="Tubes_Polygon" type="CollisionPolygon2D" parent="."]
+position = Vector2(-48, -12)
+polygon = PackedVector2Array(1, 1, 0, 1, 0, 10, 1, 10, 1, 11, 2, 11, 2, 13, 3, 13, 3, 14, 2, 14, 2, 16, 1, 16, 1, 17, 0, 17, 0, 26, 1, 26, 1, 27, 8, 27, 8, 26, 10, 26, 10, 25, 11, 25, 11, 24, 12, 24, 12, 19, 11, 19, 11, 8, 12, 8, 12, 3, 11, 3, 11, 2, 10, 2, 10, 1, 8, 1, 8, 0, 1, 0)
+metadata/ShapeKey = "Tubes_Shape"
+
+[node name="Tail" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-31.5, 1.5)
+texture = ExtResource("3_6bnjn")
+script = ExtResource("2_0i4tc")
+metadata/Mass = 0.0
+
+[node name="Tail_Rect" type="CollisionShape2D" parent="."]
+position = Vector2(-31.5, 1.5)
+shape = SubResource("RectangleShape2D_ywvil")
+metadata/ShapeKey = "Tail_Shape"
+
+[node name="Tail_Circle" type="CollisionShape2D" parent="."]
+position = Vector2(-35.2241, 1.5)
+shape = SubResource("CircleShape2D_syqo3")
+metadata/ShapeKey = "Tail_Shape"
+
+[node name="Tail_Polygon" type="CollisionPolygon2D" parent="."]
+position = Vector2(-46, -15)
+polygon = PackedVector2Array(0, 2, 1, 2, 1, 3, 2, 3, 2, 4, 3, 4, 3, 5, 4, 5, 4, 6, 5, 6, 5, 8, 6, 8, 6, 25, 5, 25, 5, 27, 4, 27, 4, 28, 3, 28, 3, 29, 2, 29, 2, 30, 1, 30, 1, 31, 0, 31, 0, 33, 6, 33, 6, 32, 8, 32, 8, 31, 9, 31, 9, 30, 10, 30, 10, 29, 24, 29, 24, 28, 25, 28, 25, 27, 26, 27, 26, 26, 27, 26, 27, 25, 28, 25, 28, 24, 29, 24, 29, 9, 28, 9, 28, 8, 27, 8, 27, 7, 26, 7, 26, 6, 25, 6, 25, 5, 24, 5, 24, 4, 10, 4, 10, 3, 9, 3, 9, 2, 8, 2, 8, 1, 6, 1, 6, 0, 0, 0)
+metadata/ShapeKey = "Tail_Shape"
+
+[node name="Detail" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-0.5, 0)
+texture = ExtResource("4_3y027")
+script = ExtResource("2_0i4tc")
+metadata/Mass = 0.0
+
+[node name="Detail_Rect" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_arw7b")
+metadata/ShapeKey = "Detail_Shape"
+
+[node name="Detail_Circle" type="CollisionShape2D" parent="."]
+position = Vector2(-1.36641, -4.40967)
+shape = SubResource("CircleShape2D_xhmwn")
+metadata/ShapeKey = "Detail_Shape"
+
+[node name="Detail_Polygon" type="CollisionPolygon2D" parent="."]
+position = Vector2(-30, -23)
+polygon = PackedVector2Array(0, 2, 1, 2, 1, 3, 4, 3, 4, 4, 7, 4, 7, 5, 8, 5, 8, 6, 9, 6, 9, 9, 8, 9, 8, 11, 7, 11, 7, 13, 8, 13, 8, 14, 15, 14, 15, 32, 16, 32, 16, 34, 17, 34, 17, 35, 18, 35, 18, 36, 20, 36, 20, 37, 22, 37, 22, 38, 23, 38, 23, 39, 17, 39, 17, 40, 11, 40, 11, 39, 10, 39, 10, 38, 9, 38, 9, 37, 6, 37, 6, 38, 5, 38, 5, 39, 4, 39, 4, 42, 5, 42, 5, 43, 6, 43, 6, 44, 7, 44, 7, 45, 9, 45, 9, 46, 20, 46, 20, 45, 25, 45, 25, 44, 27, 44, 27, 43, 29, 43, 29, 42, 30, 42, 30, 41, 31, 41, 31, 40, 53, 40, 53, 39, 55, 39, 55, 38, 56, 38, 56, 37, 57, 37, 57, 36, 58, 36, 58, 31, 59, 31, 59, 18, 58, 18, 58, 17, 57, 17, 57, 16, 56, 16, 56, 15, 54, 15, 54, 14, 49, 14, 49, 13, 23, 13, 23, 12, 22, 12, 22, 11, 21, 11, 21, 10, 20, 10, 20, 9, 19, 9, 19, 8, 18, 8, 18, 7, 17, 7, 17, 6, 16, 6, 16, 5, 15, 5, 15, 4, 13, 4, 13, 3, 10, 3, 10, 2, 7, 2, 7, 1, 4, 1, 4, 0, 0, 0)
+metadata/ShapeKey = "Detail_Shape"
+
+[node name="Windows" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(9, -10.5)
+texture = ExtResource("5_c88u2")
+script = ExtResource("2_0i4tc")
+metadata/Mass = 0.0
+
+[node name="Windows_Rect" type="CollisionShape2D" parent="."]
+position = Vector2(9, -10.5)
+shape = SubResource("RectangleShape2D_gh5ql")
+metadata/ShapeKey = "Windows_Shape"
+
+[node name="Windows_Circle" type="CollisionShape2D" parent="."]
+position = Vector2(9, -7.5)
+shape = SubResource("CircleShape2D_75j3r")
+metadata/ShapeKey = "Windows_Shape"
+
+[node name="Windows_Polygon" type="CollisionPolygon2D" parent="."]
+position = Vector2(-17, -18)
+polygon = PackedVector2Array(11, 1, 8, 1, 8, 2, 6, 2, 6, 3, 4, 3, 4, 4, 3, 4, 3, 5, 2, 5, 2, 6, 1, 6, 1, 7, 0, 7, 0, 9, 1, 9, 1, 10, 2, 10, 2, 11, 3, 11, 3, 12, 14, 12, 14, 13, 15, 13, 15, 14, 17, 14, 17, 15, 51, 15, 51, 14, 52, 14, 52, 10, 51, 10, 51, 9, 50, 9, 50, 8, 49, 8, 49, 7, 48, 7, 48, 6, 47, 6, 47, 5, 45, 5, 45, 4, 44, 4, 44, 3, 43, 3, 43, 2, 42, 2, 42, 1, 40, 1, 40, 0, 11, 0)
+metadata/ShapeKey = "Windows_Shape"
+
+[node name="Body2" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(3, 5.5)
+texture = ExtResource("6_ixdkg")
+script = ExtResource("2_0i4tc")
+metadata/Mass = 0.0
+
+[node name="Body2_Rect" type="CollisionShape2D" parent="."]
+position = Vector2(3, 5.5)
+shape = SubResource("RectangleShape2D_pvxob")
+metadata/ShapeKey = "Body2_Shape"
+
+[node name="Body2_Circle" type="CollisionShape2D" parent="."]
+position = Vector2(3, 4.5)
+shape = SubResource("CircleShape2D_8pua4")
+metadata/ShapeKey = "Body2_Shape"
+
+[node name="Body2_Polygon" type="CollisionPolygon2D" parent="."]
+position = Vector2(-13, -9)
+polygon = PackedVector2Array(0, 16, 1, 16, 1, 17, 2, 17, 2, 18, 3, 18, 3, 19, 5, 19, 5, 20, 6, 20, 6, 21, 7, 21, 7, 22, 8, 22, 8, 23, 9, 23, 9, 24, 10, 24, 10, 25, 11, 25, 11, 26, 13, 26, 13, 27, 15, 27, 15, 28, 17, 28, 17, 29, 26, 29, 26, 28, 31, 28, 31, 27, 32, 27, 32, 23, 31, 23, 31, 22, 25, 22, 25, 21, 23, 21, 23, 20, 21, 20, 21, 19, 20, 19, 20, 18, 19, 18, 19, 16, 18, 16, 18, 13, 17, 13, 17, 11, 16, 11, 16, 9, 15, 9, 15, 8, 14, 8, 14, 7, 13, 7, 13, 6, 12, 6, 12, 5, 11, 5, 11, 4, 10, 4, 10, 3, 9, 3, 9, 2, 7, 2, 7, 1, 6, 1, 6, 0, 0, 0)
+metadata/ShapeKey = "Body2_Shape"
+
+[node name="Body1" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(29, 3)
+texture = ExtResource("7_fs66o")
+script = ExtResource("2_0i4tc")
+metadata/Mass = 0.0
+
+[node name="Body1_Rect" type="CollisionShape2D" parent="."]
+position = Vector2(29, 3)
+shape = SubResource("RectangleShape2D_cxm0s")
+metadata/ShapeKey = "Body1_Shape"
+
+[node name="Body1_Circle" type="CollisionShape2D" parent="."]
+position = Vector2(29.3642, 2.88642)
+shape = SubResource("CircleShape2D_6jgg4")
+metadata/ShapeKey = "Body1_Shape"
+
+[node name="Body1_Polygon" type="CollisionPolygon2D" parent="."]
+position = Vector2(10, -9)
+polygon = PackedVector2Array(5, 1, 4, 1, 4, 2, 3, 2, 3, 3, 2, 3, 2, 5, 1, 5, 1, 9, 0, 9, 0, 15, 1, 15, 1, 18, 2, 18, 2, 19, 3, 19, 3, 20, 5, 20, 5, 21, 9, 21, 9, 20, 10, 20, 10, 21, 13, 21, 13, 20, 14, 20, 14, 21, 16, 21, 16, 22, 17, 22, 17, 23, 19, 23, 19, 24, 34, 24, 34, 23, 35, 23, 35, 21, 36, 21, 36, 19, 37, 19, 37, 18, 38, 18, 38, 8, 37, 8, 37, 7, 36, 7, 36, 5, 35, 5, 35, 3, 34, 3, 34, 2, 17, 2, 17, 1, 16, 1, 16, 0, 11, 0, 11, 1, 9, 1, 9, 0, 5, 0)
+metadata/ShapeKey = "Body1_Shape"
+
+[node name="BodyDetail" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(2, 1.5)
+texture = ExtResource("8_qe11i")
+script = ExtResource("2_0i4tc")
+metadata/Mass = 0.0
+
+[node name="BodyDetail_Rect" type="CollisionShape2D" parent="."]
+position = Vector2(2, 1.5)
+shape = SubResource("RectangleShape2D_75d6k")
+metadata/ShapeKey = "BodyDetail_Shape"
+
+[node name="BodyDetail_Circle" type="CollisionShape2D" parent="."]
+position = Vector2(0.416666, 2.5)
+shape = SubResource("CircleShape2D_ernkh")
+metadata/ShapeKey = "BodyDetail_Shape"
+
+[node name="BodyDetail_Polygon" type="CollisionPolygon2D" parent="."]
+position = Vector2(-28, -15)
+polygon = PackedVector2Array(3, 1, 2, 1, 2, 2, 1, 2, 1, 3, 0, 3, 0, 4, 1, 4, 1, 5, 4, 5, 4, 6, 5, 6, 5, 8, 6, 8, 6, 10, 7, 10, 7, 23, 6, 23, 6, 25, 5, 25, 5, 27, 4, 27, 4, 28, 3, 28, 3, 29, 2, 29, 2, 30, 1, 30, 1, 31, 0, 31, 0, 32, 1, 32, 1, 33, 9, 33, 9, 32, 12, 32, 12, 31, 13, 31, 13, 30, 14, 30, 14, 29, 15, 29, 15, 27, 16, 27, 16, 25, 18, 25, 18, 24, 19, 24, 19, 23, 54, 23, 54, 22, 55, 22, 55, 23, 59, 23, 59, 22, 60, 22, 60, 18, 59, 18, 59, 17, 58, 17, 58, 16, 56, 16, 56, 17, 54, 17, 54, 18, 19, 18, 19, 12, 18, 12, 18, 10, 17, 10, 17, 8, 16, 8, 16, 6, 15, 6, 15, 5, 14, 5, 14, 4, 13, 4, 13, 3, 12, 3, 12, 2, 10, 2, 10, 1, 8, 1, 8, 0, 3, 0)
+metadata/ShapeKey = "BodyDetail_Shape"
+
+[node name="Ship4" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+texture = ExtResource("9_uglom")
+script = ExtResource("2_0i4tc")
+metadata/Mass = 0.0
+
+[node name="Ship4_Rect" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("RectangleShape2D_7b4br")
+disabled = true
+metadata/ShapeKey = "Ship4_Shape"
+
+[node name="Ship4_Circle" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-0.520832, 1.5)
+shape = SubResource("CircleShape2D_1gx7u")
+disabled = true
+metadata/ShapeKey = "Ship4_Shape"
+
+[node name="Ship4_Polygon" type="CollisionPolygon2D" parent="."]
+visible = false
+position = Vector2(-48, -23)
+polygon = PackedVector2Array(18, 2, 19, 2, 19, 3, 22, 3, 22, 4, 25, 4, 25, 5, 26, 5, 26, 6, 27, 6, 27, 8, 23, 8, 23, 9, 22, 9, 22, 10, 21, 10, 21, 11, 20, 11, 20, 12, 12, 12, 12, 11, 11, 11, 11, 10, 10, 10, 10, 9, 8, 9, 8, 8, 2, 8, 2, 10, 3, 10, 3, 11, 1, 11, 1, 12, 0, 12, 0, 21, 1, 21, 1, 22, 2, 22, 2, 24, 3, 24, 3, 25, 2, 25, 2, 27, 1, 27, 1, 28, 0, 28, 0, 37, 1, 37, 1, 38, 3, 38, 3, 39, 2, 39, 2, 41, 8, 41, 8, 40, 10, 40, 10, 39, 11, 39, 11, 38, 12, 38, 12, 37, 22, 37, 22, 38, 21, 38, 21, 39, 20, 39, 20, 40, 21, 40, 21, 41, 22, 41, 22, 42, 23, 42, 23, 43, 24, 43, 24, 44, 25, 44, 25, 45, 27, 45, 27, 46, 38, 46, 38, 45, 43, 45, 43, 44, 45, 44, 45, 43, 47, 43, 47, 42, 48, 42, 48, 41, 50, 41, 50, 42, 52, 42, 52, 43, 61, 43, 61, 42, 66, 42, 66, 41, 67, 41, 67, 40, 71, 40, 71, 39, 73, 39, 73, 38, 74, 38, 74, 37, 77, 37, 77, 38, 92, 38, 92, 37, 93, 37, 93, 35, 94, 35, 94, 33, 95, 33, 95, 32, 96, 32, 96, 22, 95, 22, 95, 21, 94, 21, 94, 19, 93, 19, 93, 17, 92, 17, 92, 16, 83, 16, 83, 15, 82, 15, 82, 14, 81, 14, 81, 13, 80, 13, 80, 12, 79, 12, 79, 11, 78, 11, 78, 10, 76, 10, 76, 9, 75, 9, 75, 8, 74, 8, 74, 7, 73, 7, 73, 6, 71, 6, 71, 5, 42, 5, 42, 6, 39, 6, 39, 7, 37, 7, 37, 8, 36, 8, 36, 7, 35, 7, 35, 6, 34, 6, 34, 5, 33, 5, 33, 4, 31, 4, 31, 3, 28, 3, 28, 2, 25, 2, 25, 1, 22, 1, 22, 0, 18, 0)
+disabled = true
+metadata/ShapeKey = "Ship4_Shape"
+
+[node name="Exhaust1" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_a5w08")
+script = ExtResource("34_y8gfk")
+metadata/NormalExhaust1_0_Offset = Vector2(0, 0)
+metadata/NormalExhaust1_1_Offset = Vector2(0, 0)
+metadata/NormalExhaust1_2_Offset = Vector2(0, 0)
+metadata/NormalExhaust1_3_Offset = Vector2(0, 0)
+metadata/NormalExhaust2_0_Offset = Vector2(0, -0.5)
+metadata/NormalExhaust2_1_Offset = Vector2(0, -0.5)
+metadata/NormalExhaust2_2_Offset = Vector2(0, -0.5)
+metadata/NormalExhaust2_3_Offset = Vector2(0, -0.5)
+metadata/NormalExhaust3_0_Offset = Vector2(0, 0)
+metadata/NormalExhaust3_1_Offset = Vector2(0, 0)
+metadata/NormalExhaust3_2_Offset = Vector2(0, 0)
+metadata/NormalExhaust3_3_Offset = Vector2(0, 0)
+metadata/TurboExhaust1_0_Offset = Vector2(0, -0.5)
+metadata/TurboExhaust1_1_Offset = Vector2(0, -0.5)
+metadata/TurboExhaust1_2_Offset = Vector2(0, -0.5)
+metadata/TurboExhaust1_3_Offset = Vector2(0, -0.5)
+metadata/TurboExhaust2_0_Offset = Vector2(0.5, -0.5)
+metadata/TurboExhaust2_1_Offset = Vector2(0.5, -0.5)
+metadata/TurboExhaust2_2_Offset = Vector2(0.5, -0.5)
+metadata/TurboExhaust2_3_Offset = Vector2(0.5, -0.5)
+metadata/TurboExhaust3_0_Offset = Vector2(0, 0)
+metadata/TurboExhaust3_1_Offset = Vector2(0, 0)
+metadata/TurboExhaust3_2_Offset = Vector2(0, 0)
+metadata/TurboExhaust3_3_Offset = Vector2(0, 0)
+metadata/NormalExhaust1_Position = Vector2(-63, -7)
+metadata/NormalExhaust2_Position = Vector2(-63, -6)
+metadata/NormalExhaust3_Position = Vector2(-63, -6)
+metadata/TurboExhaust1_Position = Vector2(-72, -6)
+metadata/TurboExhaust2_Position = Vector2(-72, -6)
+metadata/TurboExhaust3_Position = Vector2(-72, -7)
+
+[node name="Exhaust2" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_uw58i")
+script = ExtResource("34_y8gfk")
+metadata/NormalExhaust1_0_Offset = Vector2(0, 0)
+metadata/NormalExhaust1_1_Offset = Vector2(0, 0)
+metadata/NormalExhaust1_2_Offset = Vector2(0, 0)
+metadata/NormalExhaust1_3_Offset = Vector2(0, 0)
+metadata/NormalExhaust2_0_Offset = Vector2(0, -0.5)
+metadata/NormalExhaust2_1_Offset = Vector2(0, -0.5)
+metadata/NormalExhaust2_2_Offset = Vector2(0, -0.5)
+metadata/NormalExhaust2_3_Offset = Vector2(0, -0.5)
+metadata/NormalExhaust3_0_Offset = Vector2(0, 0)
+metadata/NormalExhaust3_1_Offset = Vector2(0, 0)
+metadata/NormalExhaust3_2_Offset = Vector2(0, 0)
+metadata/NormalExhaust3_3_Offset = Vector2(0, 0)
+metadata/TurboExhaust1_0_Offset = Vector2(0, -0.5)
+metadata/TurboExhaust1_1_Offset = Vector2(0, -0.5)
+metadata/TurboExhaust1_2_Offset = Vector2(0, -0.5)
+metadata/TurboExhaust1_3_Offset = Vector2(0, -0.5)
+metadata/TurboExhaust2_0_Offset = Vector2(0.5, -0.5)
+metadata/TurboExhaust2_1_Offset = Vector2(0.5, -0.5)
+metadata/TurboExhaust2_2_Offset = Vector2(0.5, -0.5)
+metadata/TurboExhaust2_3_Offset = Vector2(0.5, -0.5)
+metadata/TurboExhaust3_0_Offset = Vector2(0, 0)
+metadata/TurboExhaust3_1_Offset = Vector2(0, 0)
+metadata/TurboExhaust3_2_Offset = Vector2(0, 0)
+metadata/TurboExhaust3_3_Offset = Vector2(0, 0)
+metadata/NormalExhaust1_Position = Vector2(-63, 9)
+metadata/NormalExhaust2_Position = Vector2(-63, 10)
+metadata/NormalExhaust3_Position = Vector2(-63, 10)
+metadata/TurboExhaust1_Position = Vector2(-72, 10)
+metadata/TurboExhaust2_Position = Vector2(-72, 10)
+metadata/TurboExhaust3_Position = Vector2(-72, 9)
+
+[node name="Shot4" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_8i4lh")
+script = ExtResource("34_y8gfk")
+metadata/Shot_0_Offset = Vector2(-11.5, 1)
+metadata/Shot_1_Offset = Vector2(-11.5, 1)
+metadata/Shot_2_Offset = Vector2(-11.5, 1)
+metadata/Shot_3_Offset = Vector2(-11.5, 1)
+metadata/Asset_0_Offset = Vector2(5, 0.5)
+metadata/Exp_0_Offset = Vector2(6.5, -0.5)
+metadata/Exp_1_Offset = Vector2(6.5, -0.5)
+metadata/Exp_2_Offset = Vector2(6.5, -0.5)
+metadata/Exp_3_Offset = Vector2(6.5, -0.5)
+metadata/Exp_4_Offset = Vector2(6.5, -0.5)
+metadata/Exp_5_Offset = Vector2(6.5, -0.5)
+metadata/Exp_6_Offset = Vector2(6.5, -0.5)
+metadata/Exp_7_Offset = Vector2(6.5, -0.5)
+metadata/Shot_Position = Vector2(70, 3)
+metadata/Asset_Position = Vector2(70, 3)
+metadata/Exp_Position = Vector2(70, 3)

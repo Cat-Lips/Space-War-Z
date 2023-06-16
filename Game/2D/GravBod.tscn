@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://xjxkonykyssa"]
+
+[ext_resource type="Script" path="res://Game/2D/GravBod.cs" id="1_tfiup"]
+
+[node name="GravBod" type="AnimatableBody2D"]
+constant_angular_velocity = 1.74533
+script = ExtResource("1_tfiup")
